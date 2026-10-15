@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gran Rifa - Lotería de Manizales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Gran Rifa Manizales</h1>
+    <p class="subtitle">Sorteo 2 de Diciembre de 2026 • Premio Mayor: $2.000.000 - Numero invertido: $500.000 - Valor de la boleta: $50.000</p>
+  </header>
+
+  <!-- Cuadrícula con los 100 números fijos para que se carguen de inmediato -->
+  <div class="grid-container" id="grid">
+    <!-- Fila 0 -->
+    <button class="number-btn" id="btn-00" onclick="openModal('00')">00</button>
+    <button class="number-btn" id="btn-01" onclick="openModal('01')">01</button>
+    <button class="number-btn" id="btn-02" onclick="openModal('02')">02</button>
+    <button class="number-btn" id="btn-03" onclick="openModal('03')">03</button>
+    <button class="number-btn" id="btn-04" onclick="openModal('04')">04</button>
+    <button class="number-btn" id="btn-05" onclick="openModal('05')">05</button>
+    <button class="number-btn" id="btn-06" onclick="openModal('06')">06</button>
+    <button class="number-btn" id="btn-07" onclick="openModal('07')">07</button>
+    <button class="number-btn" id="btn-08" onclick="openModal('08')">08</button>
+    <button class="number-btn" id="btn-09" onclick="openModal('09')">09</button>
+    
+    <!-- Fila 10 -->
+    <button class="number-btn" id="btn-10" onclick="openModal('10')">10</button>
+    <button class="number-btn" id="btn-11" onclick="openModal('11')">11</button>
+    <button class="number-btn" id="btn-12" onclick="openModal('12')">12</button>
+    <button class="number-btn" id="btn-13" onclick="openModal('13')">13</button>
+    <button class="number-btn" id="btn-14" onclick="openModal('14')">14</button>
+    <button class="number-btn" id="btn-15" onclick="openModal('15')">15</button>
+    <button class="number-btn" id="btn-16" onclick="openModal('16')">16</button>
+    <button class="number-btn" id="btn-17" onclick="openModal('17')">17</button>
+    <button class="number-btn" id="btn-18" onclick="openModal('18')">18</button>
+    <button class="number-btn" id="btn-19" onclick="openModal('19')">19</button>
+
+    <!-- Fila 20 -->
+    <button class="number-btn" id="btn-20" onclick="openModal('20')">20</button>
+    <button class="number-btn" id="btn-21" onclick="openModal('21')">21</button>
+    <button class="number-btn" id="btn-22" onclick="openModal('22')">22</button>
+    <button class="number-btn" id="btn-23" onclick="openModal('23')">23</button>
+    <button class="number-btn" id="btn-24" onclick="openModal('24')">24</button>
+    <button class="number-btn" id="btn-25" onclick="openModal('25')">25</button>
+    <button class="number-btn" id="btn-26" onclick="openModal('26')">26</button>
+    <button class="number-btn" id="btn-27" onclick="openModal('27')">27</button>
+    <button class="number-btn" id="btn-28" onclick="openModal('28')">28</button>
+    <button class="number-btn" id="btn-29" onclick="openModal('29')">29</button>
+
+    <!-- Fila 30 -->
+    <button class="number-btn" id="btn-30" onclick="openModal('30')">30</button>
+    <button class="number-btn" id="btn-31" onclick="openModal('31')">31</button>
+    <button class="number-btn" id="btn-32" onclick="openModal('32')">32</button>
+    <button class="number-btn" id="btn-33" onclick="openModal('33')">33</button>
+    <button class="number-btn" id="btn-34" onclick="openModal('34')">34</button>
+    <button class="number-btn" id="btn-35" onclick="openModal('35')">35</button>
+    <button class="number-btn" id="btn-36" onclick="openModal('36')">36</button>
+    <button class="number-btn" id="btn-37" onclick="openModal('37')">37</button>
+    <button class="number-btn" id="btn-38" onclick="openModal('38')">38</button>
+    <button class="number-btn" id="btn-39" onclick="openModal('39')">39</button>
+
+    <!-- Fila 40 -->
+    <button class="number-btn" id="btn-40" onclick="openModal('40')">40</button>
+    <button class="number-btn" id="btn-41" onclick="openModal('41')">41</button>
+    <button class="number-btn" id="btn-42" onclick="openModal('42')">42</button>
+    <button class="number-btn" id="btn-43" onclick="openModal('43')">43</button>
+    <button class="number-btn" id="btn-44" onclick="openModal('44')">44</button>
+    <button class="number-btn" id="btn-45" onclick="openModal('45')">45</button>
+    <button class="number-btn" id="btn-46" onclick="openModal('46')">46</button>
+    <button class="number-btn" id="btn-47" onclick="openModal('47')">47</button>
+    <button class="number-btn" id="btn-48" onclick="openModal('48')">48</button>
+    <button class="number-btn" id="btn-49" onclick="openModal('49')">49</button>
+
+    <!-- Fila 50 -->
+    <button class="number-btn" id="btn-50" onclick="openModal('50')">50</button>
+    <button class="number-btn" id="btn-51" onclick="openModal('51')">51</button>
+    <button class="number-btn" id="btn-52" onclick="openModal('52')">52</button>
+    <button class="number-btn" id="btn-53" onclick="openModal('53')">53</button>
+    <button class="number-btn" id="btn-54" onclick="openModal('54')">54</button>
+    <button class="number-btn" id="btn-55" onclick="openModal('55')">55</button>
+    <button class="number-btn" id="btn-56" onclick="openModal('56')">56</button>
+    <button class="number-btn" id="btn-57" onclick="openModal('57')">57</button>
+    <button class="number-btn" id="btn-58" onclick="openModal('58')">58</button>
+    <button class="number-btn" id="btn-59" onclick="openModal('59')">59</button>
+
+    <!-- Fila 60 -->
+    <button class="number-btn" id="btn-60" onclick="openModal('60')">60</button>
+    <button class="number-btn" id="btn-61" onclick="openModal('61')">61</button>
+    <button class="number-btn" id="btn-62" onclick="openModal('62')">62</button>
+    <button class="number-btn" id="btn-63" onclick="openModal('63')">63</button>
+    <button class="number-btn" id="btn-64" onclick="openModal('64')">64</button>
+    <button class="number-btn" id="btn-65" onclick="openModal('65')">65</button>
+    <button class="number-btn" id="btn-66" onclick="openModal('66')">66</button>
+    <button class="number-btn" id="btn-67" onclick="openModal('67')">67</button>
+    <button class="number-btn" id="btn-68" onclick="openModal('68')">68</button>
+    <button class="number-btn" id="btn-69" onclick="openModal('69')">69</button>
+
+    <!-- Fila 70 -->
+    <button class="number-btn" id="btn-70" onclick="openModal('70')">70</button>
+    <button class="number-btn" id="btn-71" onclick="openModal('71')">71</button>
+    <button class="number-btn" id="btn-72" onclick="openModal('72')">72</button>
+    <button class="number-btn" id="btn-73" onclick="openModal('73')">73</button>
+    <button class="number-btn" id="btn-74" onclick="openModal('74')">74</button>
+    <button class="number-btn" id="btn-75" onclick="openModal('75')">75</button>
+    <button class="number-btn" id="btn-76" onclick="openModal('76')">76</button>
+    <button class="number-btn" id="btn-77" onclick="openModal('77')">77</button>
+    <button class="number-btn" id="btn-78" onclick="openModal('78')">78</button>
+    <button class="number-btn" id="btn-79" onclick="openModal('79')">79</button>
+
+    <!-- Fila 80 -->
+    <button class="number-btn" id="btn-80" onclick="openModal('80')">80</button>
+    <button class="number-btn" id="btn-81" onclick="openModal('81')">81</button>
+    <button class="number-btn" id="btn-82" onclick="openModal('82')">82</button>
+    <button class="number-btn" id="btn-83" onclick="openModal('83')">83</button>
+    <button class="number-btn" id="btn-84" onclick="openModal('84')">84</button>
+    <button class="number-btn" id="btn-85" onclick="openModal('85')">85</button>
+    <button class="number-btn" id="btn-86" onclick="openModal('86')">86</button>
+    <button class="number-btn" id="btn-87" onclick="openModal('87')">87</button>
+    <button class="number-btn" id="btn-88" onclick="openModal('88')">88</button>
+    <button class="number-btn" id="btn-89" onclick="openModal('89')">89</button>
+
+    <!-- Fila 90 -->
+    <button class="number-btn" id="btn-90" onclick="openModal('90')">90</button>
+    <button class="number-btn" id="btn-91" onclick="openModal('91')">91</button>
+    <button class="number-btn" id="btn-92" onclick="openModal('92')">92</button>
+    <button class="number-btn" id="btn-93" onclick="openModal('93')">93</button>
+    <button class="number-btn" id="btn-94" onclick="openModal('94')">94</button>
+    <button class="number-btn" id="btn-95" onclick="openModal('95')">95</button>
+    <button class="number-btn" id="btn-96" onclick="openModal('96')">96</button>
+    <button class="number-btn" id="btn-97" onclick="openModal('97')">97</button>
+    <button class="number-btn" id="btn-98" onclick="openModal('98')">98</button>
+    <button class="number-btn" id="btn-99" onclick="openModal('99')">99</button>
+  </div>
+
+  <div class="legend">
+    <span class="legend-disp">Disponible</span>
+    <span class="legend-res">Apartado</span>
+    <span class="legend-paid">Pagado</span>
+  </div>
+
+  <!-- Modal para Apartar -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3>Apartar Número <span id="modal-num"></span></h3>
+      <form id="reserve-form">
+        <label>Nombre Completo:</label>
+        <input type="text" id="nombre" required placeholder="Ej. Sofía Betancurt">
+        
+        <label>Número de WhatsApp:</label>
+        <input type="tel" id="telefono" required placeholder="Ej. 3101234567">
+        
+        <div class="modal-buttons">
+          <button type="button" class="btn btn-cancel" onclick="closeModal()">Cancelar</button>
+          <button type="submit" class="btn btn-submit">Confirmar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase SDK Clásico (Versión 8.10.1) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <!-- Script general -->
+  <script src="js/app.js"></script>
+</body>
+</html>
